@@ -2,6 +2,7 @@
 P = [200 110 110 200; 210 250 100 140]
 [x, y] = deCasteljau_line(P);
 plot(x, y, '*');
+axis([100 220 90 260])
 xlabel('X');
 ylabel('Y');
 hold on;
@@ -20,6 +21,9 @@ Y = [P(2,2),P(2,3)];
 plot(X,Y);
 X = [P(1,3), P(1,4)];
 Y = [P(2,3),P(2,4)];
+plot(X,Y);
+X = [P(1,1), P(1,4)];
+Y = [P(2,1),P(2,4)];
 plot(X,Y);
 
 %% Task 3
